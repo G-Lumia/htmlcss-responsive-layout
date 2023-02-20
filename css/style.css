@@ -23,6 +23,20 @@ body{
 }
 
 
+/* text general rules */
+
+h2{
+    font-size:3rem;
+}
+
+p{
+    font-size:1.8rem;
+}
+
+h2,p{
+    padding:30px 0px;
+}
+
 /* a */
 
 a{
@@ -36,16 +50,21 @@ img{
 
 /* utility */
 
-    .container{
-        padding: 15px;
-    }
-
     .text-center{
         text-align: center;
     }
 
     .even{
         background-color: var(--even);
+        color:var(--light-color);
+    }
+
+    .white-bg{
+        background-color: var(--light-color);
+        color:var(--footer);
+        padding:40px;
+        border-radius: 25px;
+        text-align: center;
     }
 
     .card{
@@ -54,6 +73,7 @@ img{
 
     .d-flex{
         display: flex;
+        flex-flow: row wrap;
     }
 
     .row{
@@ -76,73 +96,7 @@ img{
         align-items: center;
     }
 
-/* buttons */
-
-    .btn{
-        border-radius: 25px;
-    }
-
-    .pad-btn{
-        padding: 10px 120px;
-    }
-
-    .white-btn{
-        color:black;
-        background-color: var(--footer);
-    }
-
-    .blue-btn{
-        color:var(--light-color);
-        background-color: var(--header);
-    }
-
-    .purple-button{
-        color: var(--light-color);
-        background-color: var(--even);
-    }
-
-/* card */
-
-    .card{
-        background-color: var(--card-bg);
-        border-radius: 10px;
-        margin-bottom:40px;
-        padding:40px;
-    }
-
-    .card h2{
-        color:var(--header);
-    }
-
-    .card.text-center i{
-        font-size:6rem;
-        color:var(--header);
-    }
-    
-    #card-left h2, #card-left p{
-        text-align: left;
-    }
-
-    
-    #card-left h2{
-        font-size:3rem;
-    }
-
-    .card p{
-        font-size:1.8rem;
-    }
-
-    #card-left *{
-        margin: 20px 0px;
-    }
-
-
-    #card-right img{
-        position:relative;
-        bottom:-45px;
-    }
-
-/* container */
+    /* container */
 
     .container{
         margin: 0 auto;
@@ -150,6 +104,9 @@ img{
         padding: 15px;
     }
 
+    section .container{
+        padding: 60px;
+    }
 
 /* header */
 
@@ -175,8 +132,70 @@ header ul li{
 /* main */
 
 main{
-    margin-top: 160px;
+    margin-top: 80px;
 }
+
+
+/* buttons */
+
+    .btn{
+        border-radius: 25px;
+        display:inline-block;
+    }
+
+    .pad-btn{
+        padding: 10px 120px;
+    }
+
+    .white{
+        color:black;
+        background-color: var(--footer);
+    }
+
+    .blue{
+        color:var(--light-color);
+        background-color: var(--header);
+    }
+
+    .purple{
+        color: var(--light-color);
+        background-color: var(--even);
+    }
+
+    .round{
+        height:50px;
+        width: 50px;
+        line-height: 50px;
+        margin-top:20px;
+        color:var(--footer);
+    }
+/* card */
+
+    .card{
+        width:100%;
+        background-color: var(--card-bg);
+        border-radius: 10px;
+        margin-bottom:40px;
+        padding:40px;
+    }
+
+    .card h2{
+        color:var(--header);
+    }
+
+    .card.text-center i{
+        font-size:6rem;
+        color:var(--header);
+    }
+    
+    #card-left h2, #card-left p{
+        text-align: left;
+    }
+    
+    #card-right img{
+        position:relative;
+        bottom:-45px;
+    }
 
 /* footer */
 
