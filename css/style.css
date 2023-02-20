@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 
@@ -15,26 +15,141 @@
     --light-color: #FFFFFF;
 }
 
-/* utility */
-
-    .container{
-        padding: 10px;
-    }
-
-    .even{
-        background-color: var(--even);
-    }
-    
-    .card{
-        background-color: var(--card-bg);
-    }
-
 /* body  */
 
 body{
     font-family: 'PT Sans', sans-serif ;
     background-color: var(--light-color);
 }
+
+
+/* a */
+
+a{
+    text-decoration: none;
+}
+
+/* img */
+img{
+    max-width: 100%;
+}
+
+/* utility */
+
+    .container{
+        padding: 15px;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+    .even{
+        background-color: var(--even);
+    }
+
+    .card{
+        background-color: var(--card-bg);
+    }
+
+    .d-flex{
+        display: flex;
+    }
+
+    .row{
+        flex-flow: row nowrap;
+    }
+
+    .column{
+        flex-flow: column nowrap;
+    }
+
+    .j-center{
+        justify-content: center;
+    }
+
+    .j-between{
+        justify-content: space-between;
+    }
+
+    .a-center{
+        align-items: center;
+    }
+
+/* buttons */
+
+    .btn{
+        border-radius: 25px;
+    }
+
+    .pad-btn{
+        padding: 10px 120px;
+    }
+
+    .white-btn{
+        color:black;
+        background-color: var(--footer);
+    }
+
+    .blue-btn{
+        color:var(--light-color);
+        background-color: var(--header);
+    }
+
+    .purple-button{
+        color: var(--light-color);
+        background-color: var(--even);
+    }
+
+/* card */
+
+    .card{
+        background-color: var(--card-bg);
+        border-radius: 10px;
+        margin-bottom:40px;
+        padding:40px;
+    }
+
+    .card h2{
+        color:var(--header);
+    }
+
+    .card.text-center i{
+        font-size:6rem;
+        color:var(--header);
+    }
+    
+    #card-left h2, #card-left p{
+        text-align: left;
+    }
+
+    
+    #card-left h2{
+        font-size:3rem;
+    }
+
+    .card p{
+        font-size:1.8rem;
+    }
+
+    #card-left *{
+        margin: 20px 0px;
+    }
+
+
+    #card-right img{
+        position:relative;
+        bottom:-45px;
+    }
+
+/* container */
+
+    .container{
+        margin: 0 auto;
+        max-width:768px;
+        padding: 15px;
+    }
+
 
 /* header */
 
@@ -45,13 +160,22 @@ header{
     height: 80px;
     width:100%;
     z-index: 10;
+    color:var(--light-color);
 }
 
+header ul{
+    list-style: none;
+    display:none;
+}
+
+header ul li{
+    padding: 0px 10px;
+}
 
 /* main */
 
 main{
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 /* footer */
@@ -60,3 +184,8 @@ footer{
     background-color: var(--footer);
 }
 
+/* responsive mobile 768px */
+
+/* responsive tablet 768px */
+
+/* responsive desktop 768px */

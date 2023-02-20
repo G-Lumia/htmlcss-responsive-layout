@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -15,11 +16,43 @@
 <body>
 
     <!-- header -->
-    
+
     <header>
-        <div class="container">
-            header
-        </div>
+        <nav class="container d-flex j-between a-center">
+            <img src="./img/logo.png" alt="">
+            <div>
+                <ul class="j-between a-center">
+                    <li>
+                        <a href="#">
+                            Planning
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Testimonials
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Features
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#">
+                            Get Started
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <i id="hamburger" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -28,7 +61,80 @@
 
         <section id="intro">
             <div class="container">
-                intro
+                <div class="card">
+                    <div id="card-left">
+                        <h2>
+                            Get a demo application
+                        </h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dolorem culpa excepturi, magni et distinctio eveniet suscipit 
+                            incidunt animi asperiores nam architecto adipisci harum iste, 
+                            cum expedita corporis accusantium eum facilis.
+                        </p>
+                        <div>
+                            <a class="btn blue-btn pad-btn" href="#">
+                                <i class="fa-brands fa-apple"></i>
+                                App Store
+                            </a>
+                        </div>
+                    </div>
+                    <div id="card-right">
+                        <img src="./img/phone.png" alt="phone">
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>
+                        Clean Code
+                    </h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolorem culpa excepturi, magni et distinctio eveniet suscipit 
+                        incidunt animi asperiores nam architecto adipisci harum iste, 
+                        cum expedita corporis accusantium eum facilis.
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h2>
+                        Web Design
+                    </h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolorem culpa excepturi, magni et distinctio eveniet suscipit 
+                        incidunt animi asperiores nam architecto adipisci harum iste, 
+                        cum expedita corporis accusantium eum facilis.
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>
+                        Development
+                    </h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolorem culpa excepturi, magni et distinctio eveniet suscipit 
+                        incidunt animi asperiores nam architecto adipisci harum iste, 
+                        cum expedita corporis accusantium eum facilis.
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h2>
+                        Branding
+                    </h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolorem culpa excepturi, magni et distinctio eveniet suscipit 
+                        incidunt animi asperiores nam architecto adipisci harum iste, 
+                        cum expedita corporis accusantium eum facilis.
+                    </p>
+                </div>
             </div>
         </section>
 
