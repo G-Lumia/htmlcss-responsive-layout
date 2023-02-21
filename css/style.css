@@ -228,14 +228,15 @@ footer{
         width:100%;
     }
 }
-/* responsive tablet 992px */
+/* responsive tablet 720px */
 
-@media screen and (min-width:769px) and (max-width: 992px){
+@media screen and (min-width:768px) and (max-width: 992px){
 
     /* intro  */
 
     .container{
         max-width: 992px;
+        width:100%;
     }
 
     #intro div.container.d-flex .d-flex:first-child{
@@ -253,6 +254,10 @@ footer{
 
     /* partners section */
 
+    #partner{
+        display:flex;
+        flex-flow: row nowrap;
+    }
     #partners div.pad-text-10{
         width:40vw;
         padding-left:10vw;
@@ -276,8 +281,8 @@ footer{
         display:flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        gap:40px;
     }
 }
 
 /* responsive desktop 1200px */
+
