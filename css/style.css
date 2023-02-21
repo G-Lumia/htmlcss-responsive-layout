@@ -257,6 +257,18 @@ footer{
         width:40vw;
         padding-left:10vw;
     }
+
+    /* benefits section */
+
+    #benefits .wrapper{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #benefits div.card.white-bg.purple{
+        width: calc((100% / 2) - 40px);
+    }
 }
 
 /* responsive desktop 1200px */
