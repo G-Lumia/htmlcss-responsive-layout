@@ -56,7 +56,8 @@ img{
     flex-flow: row wrap;
 }
 
-.row{
+.d-flex-row{
+    display:flex;
     flex-flow: row nowrap;
 }
 .column{
@@ -72,6 +73,9 @@ img{
     align-items: center;
 }
 
+.gap-40{
+    gap:40px;
+}
 /* container */
 
 .container{
@@ -127,13 +131,15 @@ main{
     font-size:4rem;
 }
 
-#card-left h2, #card-left p{
-    text-align: left;
+#card-left{
+    padding-bottom:0;
 }
 
-#card-right img{
-    position:relative;
-    bottom:-45px;
+#card-left img{
+    display:block;
+}
+#card-left h2, #card-left p{
+    text-align: left;
 }
 
 
@@ -227,5 +233,24 @@ footer{
     }
 }
 /* responsive tablet 992px */
+
+@media screen and (min-width:769px) and (max-width: 992px){
+    .container{
+        max-width: 992px;
+    }
+
+    #intro div.container.d-flex .d-flex:first-child{
+        flex-flow:row nowrap;
+        justify-content: space-between;
+    }
+
+    #card-left{
+        width: calc((100% / 3) * 2 - 40px);
+    }
+
+    #card-right{
+        width: calc((100% / 3) - 40px);
+    }
+}
 
 /* responsive desktop 1200px */
