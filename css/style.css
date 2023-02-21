@@ -56,10 +56,6 @@ img{
     flex-flow: row wrap;
 }
 
-.d-flex-row{
-    display:flex;
-    flex-flow: row nowrap;
-}
 .column{
     flex-flow: column nowrap;
 }
@@ -205,8 +201,8 @@ main{
 
 
 .icon{
-    height:40vw;
-    width:40vw;
+    height:30vw;
+    width:30vw;
     border-radius:100%;
     overflow:hidden;
 }
@@ -235,6 +231,9 @@ footer{
 /* responsive tablet 992px */
 
 @media screen and (min-width:769px) and (max-width: 992px){
+
+    /* intro  */
+
     .container{
         max-width: 992px;
     }
@@ -250,6 +249,13 @@ footer{
 
     #card-right{
         width: calc((100% / 3) - 40px);
+    }
+
+    /* partners section */
+
+    #partners div.pad-text-10{
+        width:40vw;
+        padding-left:10vw;
     }
 }
 
