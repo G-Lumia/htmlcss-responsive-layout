@@ -46,21 +46,12 @@ img{
 .text-center{
     text-align: center;
 }
-.even{
-    background-color: var(--even);
-    color:var(--light-color);
-}
-.white-bg{
-    background-color: var(--light-color);
-    color:var(--footer);
-    padding:40px;
-    border-radius: 25px;
-    text-align: center;
-}
+
 .d-flex{
     display: flex;
     flex-flow: row wrap;
 }
+
 .row{
     flex-flow: row nowrap;
 }
@@ -86,7 +77,7 @@ img{
 }
 
 section .container{
-    padding: 60px;
+    padding: 40px;
 }
 
 /* header */
@@ -120,19 +111,17 @@ main{
 
 .card{
     width:100%;
-    background-color: var(--card-bg);
     border-radius: 10px;
     margin-bottom:40px;
     padding:40px;
 }
 
-.card h2{
+#application{
     color:var(--header);
 }
 
-.card.text-center i{
+#application i{
     font-size:4rem;
-    color:var(--header);
 }
 
 #card-left h2, #card-left p{
@@ -156,23 +145,39 @@ main{
     padding: 10px 50px;
 }
 
-.white{
+.round{
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+/* different bg and text colors */
+
+.white-bg{
     color:black;
     background-color: var(--light-color);
 }
 
+.even{
+    background-color: var(--even);
+    color:var(--light-color);
+}
+ 
 .blue{
     color:var(--light-color);
     background-color: var(--header);
 }
 
+.light-blue-bg{
+    background-color: var(--card-bg);
+}
+
 .purple-bg{
-    color: var(--light-color);
     background-color: var(--even);
 }
 
 .white-bg{
-    color:var(--even);
     background-color: var(--light-color);
 }
 
@@ -180,23 +185,23 @@ main{
     color:var(--even);
 }
 
-.round{
-    height:50px;
-    width: 50px;
-    line-height: 50px;
-    margin-top:20px;
-    color:var(--footer);
+.white{
+    color:var(--light-color);
 }
-    
 
+#gold{
+    color:gold;
+}
 /* partner icon */
 
+
 .icon{
-    height:20vw;
-    width:20vw;
+    height:40vw;
+    width:40vw;
     border-radius:100%;
     overflow:hidden;
 }
+
 
 .icon img{
     width:100%;
