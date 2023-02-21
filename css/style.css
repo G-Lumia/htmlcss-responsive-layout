@@ -222,20 +222,21 @@ footer{
 
 /* responsive mobile 768px  to 992px*/
 
-@media screen and (max-width: 768px){
+@media screen and (min-width:768px) and (max-width: 992px){
     .container{
-        max-width: 768px;
+        min-width: 768px;
+        max-width: 992px;
         width:100%;
     }
 }
 /* responsive tablet 720px */
 
-@media screen and (min-width:768px) and (max-width: 992px){
+@media screen and (min-width:992px) and (max-width: 1200px){
 
     /* intro  */
 
     .container{
-        max-width: 992px;
+        max-width: 1200px;
         width:100%;
     }
 
@@ -286,3 +287,96 @@ footer{
 
 /* responsive desktop 1200px */
 
+@media screen and (min-width:1200px){
+    /* intro  */
+
+    .container{
+        max-width: 1200px;
+        width:100%;
+    }
+
+    #intro div.container.d-flex .d-flex:first-child{
+        flex-flow:row nowrap;
+        justify-content: space-between;
+    }
+
+    .desktop-flexed{
+        display:flex;
+        flex: row nowrap;
+        justify-content: space-between;
+    }
+
+    .desktop-flexed img{
+        width:50%;
+    }
+
+    #card-left{
+        width: calc((100% / 3) * 2 - 40px);
+    }
+
+    #card-right{
+        width: calc((100% / 3) - 40px);
+    }
+
+    /* planning */
+
+    .c-flex{
+        display:flex;
+        flex-flow:column nowrap;
+    }
+
+    #planning .d-flex{
+        flex-flow: row nowrap;
+    }
+
+    div.c-flex div.card.white-bg{
+        margin:200px 0px 0px 50px;
+    }
+
+    /* partners section */
+
+    #partner{
+        display:flex;
+        flex-flow: row nowrap;
+    }
+    #partners div.pad-text-10{
+        width:40vw;
+        padding-left:10vw;
+    }
+
+    /* benefits section */
+
+    #benefits .wrapper{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #benefits div.card.white-bg.purple{
+        width: calc((100% / 2) - 40px);
+    }
+
+    /* about us section */
+
+    #about-us div.card{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1200px){
+    #hamburger{
+        display:none;
+    }
+
+    #navbar{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navbar a{
+        color:white;
+    }
+}
