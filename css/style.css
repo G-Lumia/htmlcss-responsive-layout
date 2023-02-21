@@ -25,14 +25,6 @@ body{
 
 /* text general rules */
 
-h2{
-    font-size:3em;
-}
-
-p,em{
-    font-size:1.8em;
-}
-
 h2,p{
     padding:30px 0px;
 }
@@ -51,59 +43,51 @@ img{
 
 /* utility */
 
-    .text-center{
-        text-align: center;
-    }
-
-    .even{
-        background-color: var(--even);
-        color:var(--light-color);
-    }
-
-    .white-bg{
-        background-color: var(--light-color);
-        color:var(--footer);
-        padding:40px;
-        border-radius: 25px;
-        text-align: center;
-    }
-
-    .d-flex{
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .row{
-        flex-flow: row nowrap;
-    }
-
-    .column{
-        flex-flow: column nowrap;
-    }
-
-    .j-center{
-        justify-content: center;
-    }
-
-    .j-between{
-        justify-content: space-between;
-    }
-
-    .a-center{
-        align-items: center;
-    }
+.text-center{
+    text-align: center;
+}
+.even{
+    background-color: var(--even);
+    color:var(--light-color);
+}
+.white-bg{
+    background-color: var(--light-color);
+    color:var(--footer);
+    padding:40px;
+    border-radius: 25px;
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+.row{
+    flex-flow: row nowrap;
+}
+.column{
+    flex-flow: column nowrap;
+}
+.j-center{
+    justify-content: center;
+}
+.j-between{
+    justify-content: space-between;
+}
+.a-center{
+    align-items: center;
+}
 
 /* container */
 
-    .container{
-        margin: 0 auto;
-        max-width:768px;
-        padding: 15px;
-    }
+.container{
+    margin: 0 auto;
+    max-width:768px;
+    padding: 15px;
+}
 
-    section .container{
-        padding: 60px;
-    }
+section .container{
+    padding: 60px;
+}
 
 /* header */
 
@@ -147,7 +131,7 @@ main{
 }
 
 .card.text-center i{
-    font-size:6rem;
+    font-size:4rem;
     color:var(--header);
 }
 
@@ -169,7 +153,7 @@ main{
 }
 
 .pad-btn{
-    padding: 10px 120px;
+    padding: 10px 50px;
 }
 
 .white{
@@ -190,6 +174,7 @@ main{
 
 .purple-text{
     color:var(--even);
+    background-color: var(--light-color);
 }
 
 .round{
