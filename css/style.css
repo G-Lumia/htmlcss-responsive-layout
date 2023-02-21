@@ -158,7 +158,7 @@ main{
 
 .white{
     color:black;
-    background-color: var(--footer);
+    background-color: var(--light-color);
 }
 
 .blue{
@@ -166,15 +166,18 @@ main{
     background-color: var(--header);
 }
 
-.purple{
+.purple-bg{
     color: var(--light-color);
     background-color: var(--even);
 }
 
-
-.purple-text{
+.wwhite-bg{
     color:var(--even);
     background-color: var(--light-color);
+}
+
+.purple{
+    color:var(--even);
 }
 
 .round{
