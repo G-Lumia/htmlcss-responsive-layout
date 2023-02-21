@@ -269,6 +269,15 @@ footer{
     #benefits div.card.white-bg.purple{
         width: calc((100% / 2) - 40px);
     }
+
+    /* about us section */
+
+    #about-us div.card{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        gap:40px;
+    }
 }
 
 /* responsive desktop 1200px */
