@@ -27,16 +27,29 @@ body{
 
 p,em{
     line-height: 1.7rem;
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 3rem;
 }
 
 h2,p{
     padding:30px 0px;
 }
 
+h3{
+    font-size:2.5rem;
+}
+
+h1{
+    font-size:5rem;
+}
 /* a */
 
 a{
     text-decoration: none;
+    font-size:1.2rem;
 }
 
 /* img */
@@ -72,6 +85,7 @@ img{
 .gap-40{
     gap:40px;
 }
+
 /* container */
 
 .container{
@@ -157,6 +171,10 @@ main{
     border-radius: 50%;
 }
 
+.pad-20{
+    padding:20px;
+}
+
 /* different bg and text colors */
 
 .white-bg{
@@ -197,6 +215,10 @@ main{
 #gold{
     color:gold;
 }
+
+.blue-text{
+    color:var(--header);
+}
 /* partner icon */
 
 
@@ -212,6 +234,22 @@ main{
     width:100%;
     height:100%;
     object-fit: cover;
+}
+
+
+/* about-us */
+
+#about-us-icon{
+    position:relative;
+    width:30vw;
+}
+
+#about-us-icon p{
+    position:absolute;
+    font-size:40vw;
+    color:var(--even);
+    right: 0px;
+    top: 20%;
 }
 
 /* footer */
@@ -304,12 +342,16 @@ footer{
         display:flex;
         flex: row nowrap;
         justify-content: space-between;
+        align-items: end;
     }
 
     .desktop-flexed img{
-        width:50%;
+        width:70%;
     }
 
+    .desktop-flexed div:first-child{
+        padding-bottom:10%;
+    }
     #card-left{
         width: calc((100% / 3) * 2 - 40px);
     }
